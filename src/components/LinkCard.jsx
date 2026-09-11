@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import LinkMenu from './LinkMenu'
 
-function LinkCard({ title, subtitle, url, icon }) {
+function LinkCard({ title, subtitle, url, icon, menuIcon }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
@@ -15,16 +15,16 @@ function LinkCard({ title, subtitle, url, icon }) {
             group
             flex min-h-[68px] w-full items-center gap-3
             rounded-full
-            border border-white/70
-            bg-[#F8F6F1]/95
+            border border-[#FFF8EE]
+            bg-[#FFFDF9]
             py-2.5 pl-3 pr-14
-            shadow-[0_8px_24px_rgba(15,23,42,0.16)]
+            shadow-[0_8px_24px_rgba(70,35,20,0.18)]
             backdrop-blur-md
             transition-all duration-200 ease-out
             hover:-translate-y-1
-            hover:border-[#D1B878]/80
-            hover:bg-[#FFFDF9]
-            hover:shadow-[0_14px_32px_rgba(15,23,42,0.22)]
+            hover:border-[#D6B970]/80
+            hover:bg-white
+            hover:shadow-[0_14px_32px_rgba(70,35,20,0.23)]
             active:translate-y-0
             active:scale-[0.985]
           "
@@ -34,12 +34,12 @@ function LinkCard({ title, subtitle, url, icon }) {
             className="
               flex h-11 w-11 shrink-0 items-center justify-center
               overflow-hidden rounded-full
-              border border-[#16264A]/10
+              border border-[#7B3F20]/10
               bg-white
-              shadow-[0_3px_10px_rgba(15,23,42,0.08)]
+              shadow-[0_3px_10px_rgba(70,35,20,0.08)]
               transition-all duration-200
-              group-hover:border-[#C9A66B]/40
-              group-hover:shadow-[0_4px_12px_rgba(201,166,107,0.16)]
+              group-hover:border-[#C9A66B]/50
+              group-hover:shadow-[0_4px_12px_rgba(201,166,107,0.20)]
             "
           >
             <img
@@ -57,9 +57,9 @@ function LinkCard({ title, subtitle, url, icon }) {
                 block truncate
                 text-[15px]
                 font-semibold
-                text-[#182238]
+                text-[#542A1B]
                 transition-colors duration-200
-                group-hover:text-[#16264A]
+                group-hover:text-[#3F2116]
               "
             >
               {title}
@@ -71,7 +71,7 @@ function LinkCard({ title, subtitle, url, icon }) {
                   mt-0.5 block truncate
                   text-[12px]
                   font-medium
-                  text-[#737680]
+                  text-[#80604F]
                 "
               >
                 {subtitle}
@@ -79,7 +79,7 @@ function LinkCard({ title, subtitle, url, icon }) {
             )}
           </span>
 
-          {/* Subtle right highlight */}
+          {/* Right highlight */}
           <span
             className="
               pointer-events-none
@@ -87,7 +87,7 @@ function LinkCard({ title, subtitle, url, icon }) {
               w-px
               bg-gradient-to-b
               from-transparent
-              via-[#D1B878]/25
+              via-[#C9A66B]/30
               to-transparent
               opacity-0
               transition-opacity duration-200
@@ -108,10 +108,10 @@ function LinkCard({ title, subtitle, url, icon }) {
             flex h-9 w-9 -translate-y-1/2
             items-center justify-center
             rounded-full
-            text-[#596174]
+            text-[#704938]
             transition-all duration-200
-            hover:bg-[#16264A]/[0.06]
-            hover:text-[#16264A]
+            hover:bg-[#7B3F20]/[0.06]
+            hover:text-[#542A1B]
             active:scale-95
           "
         >
@@ -126,6 +126,7 @@ function LinkCard({ title, subtitle, url, icon }) {
           title={title}
           url={url}
           icon={icon}
+          menuIcon={menuIcon}
           onClose={() => setIsMenuOpen(false)}
         />
       )}

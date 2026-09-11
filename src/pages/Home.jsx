@@ -6,53 +6,54 @@ function Home() {
     <main
       className="relative min-h-screen overflow-hidden px-5 py-8 sm:py-10"
       style={{
-        background: `
-          radial-gradient(
-            ellipse 70% 55% at 50% 38%,
-            rgba(238, 232, 223, 0.95) 0%,
-            rgba(205, 198, 190, 0.78) 32%,
-            transparent 72%
-          ),
-          radial-gradient(
-            ellipse 55% 70% at 8% 42%,
-            rgba(72, 91, 121, 0.78) 0%,
-            rgba(72, 91, 121, 0.34) 42%,
-            transparent 76%
-          ),
-          radial-gradient(
-            ellipse 55% 65% at 92% 35%,
-            rgba(116, 74, 78, 0.42) 0%,
-            rgba(154, 126, 111, 0.22) 38%,
-            transparent 74%
-          ),
-          radial-gradient(
-            ellipse 70% 55% at 50% 100%,
-            rgba(25, 38, 61, 0.88) 0%,
-            rgba(47, 57, 75, 0.68) 42%,
-            transparent 78%
-          ),
-          linear-gradient(
-            135deg,
-            #5D6879 0%,
-            #767B83 32%,
-            #85817E 52%,
-            #626A78 75%,
-            #303B50 100%
-          )
-        `,
-        fontFamily: "'DM Sans', sans-serif",
-      }}
+      background: `
+        radial-gradient(
+          ellipse 72% 58% at 50% 30%,
+          rgba(255, 239, 214, 0.94) 0%,
+          rgba(255, 205, 159, 0.82) 34%,
+          transparent 72%
+        ),
+        radial-gradient(
+          ellipse 62% 68% at 2% 42%,
+          rgba(246, 130, 61, 0.76) 0%,
+          rgba(250, 163, 89, 0.50) 44%,
+          transparent 77%
+        ),
+        radial-gradient(
+          ellipse 60% 65% at 98% 35%,
+          rgba(235, 111, 53, 0.58) 0%,
+          rgba(249, 156, 91, 0.32) 43%,
+          transparent 76%
+        ),
+        radial-gradient(
+          ellipse 72% 54% at 50% 100%,
+          rgba(116, 58, 39, 0.78) 0%,
+          rgba(185, 86, 45, 0.55) 44%,
+          transparent 80%
+        ),
+        linear-gradient(
+          135deg,
+          #F07A3A 0%,
+          #F69A57 28%,
+          #FAC17D 52%,
+          #F29A58 75%,
+          #B85B38 100%
+        )
+      `,
+      fontFamily: "'DM Sans', sans-serif",
+    }}
     >
       {/* Brand strip */}
       <div
         className="fixed inset-x-0 top-0 z-10 h-[3px]"
         style={{
           background:
-            'linear-gradient(90deg, #16264A 0%, #7A1F2B 50%, #C9A66B 100%)',
+            'linear-gradient(90deg, #542A1B 0%, #8A4B35 50%, #C9A66B 100%)',
         }}
       />
 
       <div className="relative mx-auto w-full max-w-xl">
+
         {/* Header */}
         <header className="text-center">
 
@@ -63,8 +64,7 @@ function Home() {
               text-[13px]
               font-semibold
               tracking-[0.04em]
-              text-[#F8F5EF]
-              drop-shadow-[0_1px_5px_rgba(15,23,42,0.28)]
+              text-[#45261B]
             "
           >
             Sewa Apartmen & Hotel Harian di Yogyakarta
@@ -77,8 +77,8 @@ function Home() {
                 flex h-full w-full items-center justify-center
                 overflow-hidden rounded-full
                 border border-[#D6B970]/80
-                bg-[#16264A]
-                shadow-[0_12px_35px_rgba(0,0,0,0.28)]
+                bg-[#542A1B]
+                shadow-[0_12px_35px_rgba(70,30,10,0.25)]
               "
             >
               <img
@@ -102,9 +102,8 @@ function Home() {
             "
             style={{
               fontFamily: "'Playfair Display', Georgia, serif",
-              color: '#FFFDF8',
-              textShadow:
-                '0 3px 18px rgba(10,18,32,0.38)',
+              color: '#402217',
+              textShadow: '0 2px 9px rgba(255,248,232,0.50)',
             }}
           >
             Luxury Room
@@ -118,8 +117,7 @@ function Home() {
               font-bold
               uppercase
               tracking-[0.24em]
-              text-[#FFF9ED]
-              drop-shadow-[0_2px_6px_rgba(10,18,32,0.65)]
+              text-[#542B1E]
             "
           >
             Apartment Jogja
@@ -145,9 +143,8 @@ function Home() {
                 flex-1
                 bg-gradient-to-r
                 from-transparent
-                via-[#D6B970]/60
-                to-[#E4C98F]
-                shadow-[0_0_4px_rgba(214,185,112,0.35)]
+                via-[#985A3B]/60
+                to-[#74402A]
               "
             />
 
@@ -158,9 +155,9 @@ function Home() {
                 shrink-0
                 rotate-45
                 border
-                border-[#F0D49A]
+                border-[#8B542B]
                 bg-[#C9A66B]
-                shadow-[0_0_9px_rgba(214,185,112,0.65)]
+                shadow-[0_0_8px_rgba(255,220,155,0.55)]
               "
             />
 
@@ -170,9 +167,8 @@ function Home() {
                 flex-1
                 bg-gradient-to-l
                 from-transparent
-                via-[#D6B970]/60
-                to-[#E4C98F]
-                shadow-[0_0_4px_rgba(214,185,112,0.35)]
+                via-[#985A3B]/60
+                to-[#74402A]
               "
             />
           </div>
@@ -187,12 +183,11 @@ function Home() {
               text-[14px]
               font-medium
               leading-6
-              text-[#FFF9F1]
-              drop-shadow-[0_1px_6px_rgba(10,18,32,0.38)]
+              text-[#45261B]
               sm:px-0
             "
           >
-            Pilih platform pemesanan atau hubungi admin kami di bawah ini.
+            Pilih Platform Pemesanan atau Hubungi Admin Kami di Bawah Ini.
           </p>
         </header>
 
@@ -205,6 +200,7 @@ function Home() {
               subtitle={link.subtitle}
               url={link.url}
               icon={link.icon}
+              menuIcon={link.menuIcon}
             />
           ))}
         </section>
@@ -214,20 +210,21 @@ function Home() {
           <span
             className="
               rounded-full
-              border border-[#E8DCC5]/30
-              bg-[#16264A]/20
+              border border-[#F1D5B5]
+              bg-[#FFF5E8]/95
               px-5 py-2
               text-xs
-              font-medium
+              font-semibold
               tracking-wide
-              text-[#EEE8DE]
-              shadow-sm
+              text-[#542A1B]
+              shadow-[0_5px_18px_rgba(70,30,10,0.16)]
               backdrop-blur-md
             "
           >
             Luxury Room · Apartment Jogja
           </span>
         </div>
+
       </div>
     </main>
   )
