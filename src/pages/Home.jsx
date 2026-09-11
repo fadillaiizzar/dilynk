@@ -15,15 +15,17 @@ function Home() {
           </p>
 
           {/* Logo */}
-          <div className="mx-auto mb-5 flex h-24 w-24 items-center justify-center overflow-hidden rounded-full bg-[#292927] shadow-md">
-            <span className="text-3xl font-semibold text-white">
-              D
-            </span>
+          <div className="mx-auto mb-5 flex h-28 w-28 items-center justify-center overflow-hidden rounded-full bg-[#292927] shadow-md">
+            <img
+              src="/icons/logo luxuryroom.jpeg"
+              alt="Logo"
+              className="h-full w-full object-cover"
+            />
           </div>
 
           {/* Nama usaha */}
           <h1 className="text-2xl font-semibold tracking-tight">
-            Dilynk
+            Luxury Room
           </h1>
 
           {/* Deskripsi */}
@@ -62,7 +64,7 @@ function Home() {
               backdrop-blur-sm
             "
           >
-            Dilynk
+            Luxury Room
           </span>
         </div>
 

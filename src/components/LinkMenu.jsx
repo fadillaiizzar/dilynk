@@ -161,11 +161,16 @@ function LinkMenu({ title, url, icon, onClose }) {
                 items-center
                 gap-4
                 rounded-2xl
+                border
+                border-[#DEDAD3]
+                bg-white
                 px-4
                 py-3.5
                 text-left
-                transition
-                hover:bg-[#F0EEE9]
+                transition-all
+                duration-200
+                hover:border-[#B9B3A8]
+                hover:bg-[#F4F2EF]
                 active:scale-[0.99]
               "
             >
