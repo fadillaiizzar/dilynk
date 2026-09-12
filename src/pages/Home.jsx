@@ -67,7 +67,7 @@ function Home() {
               text-[#42251D]
             "
           >
-            Sewa Apartmen & Hotel Harian di Yogyakarta
+            Sewa Apartment & Hotel Harian di Yogyakarta
           </p>
 
           {/* Logo */}
@@ -82,7 +82,7 @@ function Home() {
               "
             >
               <img
-                src="/icons/logo luxuryroom.jpeg"
+                src="/icons/logo-luxuryroom.jpeg"
                 alt="Logo Luxury Room Apartment Jogja"
                 className="h-full w-full object-cover"
                 loading="eager"

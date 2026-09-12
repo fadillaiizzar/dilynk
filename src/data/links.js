@@ -1,5 +1,5 @@
 const whatsappMessage =
-  'Halo, saya tertarik dengan penginapan apartemen di Jogja, bisakah Anda beri info lebih lanjut?'
+  'Halo, saya tertarik dengan penginapan apartmen di Jogja, bisakah Anda beri info lebih lanjut?'
 
 const links = [
   {
